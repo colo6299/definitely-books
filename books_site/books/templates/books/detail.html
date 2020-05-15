@@ -1,0 +1,11 @@
+<h1>{{ book.title }}</h1>
+
+Number of pages: {{ book.num_pages }}
+<br/>
+Author: {{ book.author }}
+<br/>
+Publish date: {{ book.date_published }}
+<br/>
+Tags: {% for tag in book.tags.all %}
+{{tag}}, 
+{% endfor %}
